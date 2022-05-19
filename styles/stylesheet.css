@@ -63,8 +63,8 @@ header
     padding: 1.5rem;
     transform: 2ms ease-in;
     position: relative;
-}
 
+}
 .contentNav .list_itens a:before
 {
     content: ' ';
@@ -85,7 +85,7 @@ header
 main
 {
     width: 100vw;
-    height: 93vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,7 +126,7 @@ button
     color: white;
     background: none;
     border: none;
-    padding: 14px 22px;
+    padding: 14px 26px;
     position: relative;
     cursor: pointer;
     
@@ -159,4 +159,21 @@ button
 button:hover
 {
     transform: translateX(2px);
+}
+
+.final
+{
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    background-color:rgba(22, 22, 22, 0.2);
+    justify-content: center;
+    align-items: center;
+}
+
+.nix
+{
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+    font-weight: 300;
 }
