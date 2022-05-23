@@ -118,7 +118,7 @@ main
     
 }
 
-button
+button 
 {
     font-size: 18px;
     display: flex;
@@ -126,17 +126,23 @@ button
     color: white;
     background: none;
     border: none;
-    padding: 14px 26px;
+    padding: 14px 22px;
     position: relative;
     cursor: pointer;
     
 }
-button:after
+button a
+{
+    text-decoration: none;
+    color: white;
+}
+
+button::after 
 {
     content: ' ';
     position: absolute;
     top: 50%;
-    transform: translateY(-50%) translateX(calc(100% + 40%));
+    transform: translateY(-50%) translateX(calc(100% + 195%));
     width: 32px;
     height: 32px;
     background: #1a73e8 ;
@@ -145,18 +151,18 @@ button:after
     z-index: -1;
 }
 
-button:hover:after{
+button:hover::after{
     width: 100%;
-    transform: translateY(-50%) translateX(-18%);
+    transform: translateY(-50%) translateX(-10%);
     transition: transform .25s cubic-bezier(0,0, .5,2), width .25s cubic-bezier(0,0, .5,2);
 }
 
-button
+button i
 {
     margin-left: 14px;
-    transition: transform .25s cubic-bezier(0,0, .5,2)
+    transition: transform .25s .4s cubic-bezier(0,0, .5,2)
 }
-button:hover
+button:hover i
 {
     transform: translateX(2px);
 }
